@@ -1,0 +1,73 @@
+:root {
+  /* --- Palet warna: krem hangat + candy pastel, khas anime/kartun --- */
+  --bg: #FFF8ED;
+  --bg-soft: #FFF1DC;
+  --surface: #FFFFFF;
+  --ink: #3A2E52;
+  --ink-soft: #6B5E85;
+  --pink: #FF6B9D;
+  --pink-deep: #E8467F;
+  --teal: #4ECDC4;
+  --teal-deep: #2FA89E;
+  --yellow: #FFD23F;
+  --purple: #8B2FC9;
+  --purple-deep: #6B1E9E;
+  --red: #FF5A5F;
+  --outline: #3A2E52;
+
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+
+  --shadow-flat: 4px 4px 0px var(--outline);
+  --shadow-flat-lg: 6px 6px 0px var(--outline);
+
+  font-family: 'Nunito', system-ui, sans-serif;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+  background: var(--bg);
+  color: var(--ink);
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  height: 100dvh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+h1, h2, h3, .display {
+  font-family: 'Baloo 2', system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Scrollbar tetap rapi kalau ada overflow */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: var(--pink); border-radius: 10px; }
