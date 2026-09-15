@@ -5,7 +5,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 // PENTING: ganti '/kartu-ajaib/' dengan nama repo GitHub kamu, contoh:
 // jika repo kamu bernama "memecard-game", ubah jadi '/memecard-game/'
 // jika deploy ke domain custom (bukan github.io/nama-repo), ubah jadi '/'
-const BASE_PATH = '/kartu-ajaib/'
+const BASE_PATH = 'MemeCard'
 
 export default defineConfig({
   base: BASE_PATH,
